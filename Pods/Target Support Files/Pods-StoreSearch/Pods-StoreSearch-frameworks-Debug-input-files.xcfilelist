@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-StoreSearch/Pods-StoreSearch-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
+${BUILT_PRODUCTS_DIR}/SMSegmentView/SMSegmentView.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

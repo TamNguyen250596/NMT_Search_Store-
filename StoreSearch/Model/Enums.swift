@@ -13,3 +13,10 @@ enum Category: Int {
   case software = 2
   case ebooks = 3
 }
+
+enum State {
+  case notSearchedYet
+  case loading
+  case noResults
+  case results([SearchResult])
+}

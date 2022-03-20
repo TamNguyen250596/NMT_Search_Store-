@@ -1,0 +1,29 @@
+PODS:
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - SMSegmentView (1.3.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Localize-Swift
+  - SMSegmentView (~> 1.3)
+  - SnapKit (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Localize-Swift
+    - SMSegmentView
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  SMSegmentView: 3c3aa59206a67a7c8a9e05593f84aa875eddeeba
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 523aa605b1bb4038826d1affabd996ee74d44a9f
+
+COCOAPODS: 1.11.2
