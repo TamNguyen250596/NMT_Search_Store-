@@ -5,3 +5,31 @@
   Created by Nguyen Minh Tam on 15/03/2022.
   
 */
+"text_placeholder_on_searchbar" = "App names, artists, songs, albums";
+"text_all_segment" = "All";
+"text_music_segment" = "Music";
+"text_software_segment" = "Software";
+"text_ebook_segment" = "E-Book";
+"text_album" = "Album";
+"tex_audio_book" = "Audio Book";
+"text_book" = "Book";
+"text_movie" = "Movie";
+"text_video" = "Music video";
+"text_podcast" = "Podcast";
+"text_app" = "App";
+"text_song" = "Song";
+"text_tv_episode" = "TV Episode";
+"text_genres" = "genres";
+"text_price" = "price";
+"text_loading" = "Loading";
+"text_artist_name_label_format" = "%1$@ with (%2$@)";
+"text_title_searchVC" = "Search";
+"text_send_support_email" = "Send Support Email";
+"text_rate_this_app" = "Rate this App";
+"text_about" = "About";
+"text_title_support_request" = "Support Request"; 
+"text_body_mail" = "Please compose your email here";
+"text_nothing_found" = "Nothing Found";
+"text_unknown" = "Unknown";
+"text_free" = "Free";
+

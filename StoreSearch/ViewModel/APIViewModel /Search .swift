@@ -5,19 +5,53 @@
 //  Created by Nguyen Minh Tam on 12/03/2022.
 //
 
-import Foundation
+import UIKit
 
-struct Search {
+class Search {
+    //MARK: Properties
+    var url: URL?
+    private(set) var state: State = .notSearchedYet
     
-    var searchResults: [SearchResult] = []
-    var hasSearched = false
-    var isLoading = false
+    //MARK: Typelias
+    typealias SearchComplete = (Bool) -> Void
     
-    private var dataTask: URLSessionDataTask? = nil
     
-    func performSearch(for text: String, category: Int) -> URL {
+    //MARK: API fuctions
+    func performSearch(for text: String, category: Category, completion: @escaping SearchComplete) {
         
-      return ITuneService.iTinesUrl(searchText: text, category: category)
+        self.state = .loading
+        let url = ITuneService.iTinesUrl(searchText: text, category: Category(rawValue: category.rawValue) ?? .all)
+        self.url = url
+
+        ITuneService.fetchSearchResults(url: url, completion: { (searchResults, error) in
+            
+            if let error = error as NSError?, error.code == -999 {
+                
+                self.state = .notSearchedYet
+                DispatchQueue.main.async {
+    
+                    completion(false)
+                    
+                }
+                
+            }
+            
+            if searchResults.isEmpty {
+                
+                self.state = .noResults
+                
+            } else {
+                
+                self.state = .results(searchResults)
+                DispatchQueue.main.async {
+       
+                    completion(true)
+                }
+                
+            }
+            
+            
+        })
         
     }
     

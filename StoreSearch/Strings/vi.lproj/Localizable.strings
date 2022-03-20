@@ -5,3 +5,30 @@
   Created by Nguyen Minh Tam on 15/03/2022.
   
 */
+"text_placeholder_on_searchbar" = "Tên ứng dụng, nghệ sĩ, bài hát, album";
+"text_all_segment" = "Tất cả";
+"text_music_segment" = "Âm nhạc";
+"text_software_segment" = "Phần mềm";
+"text_ebook_segment" = "Sách điện tử";
+"text_album" = "Album";
+"tex_audio_book" = "Sách nói";
+"text_book" = "Sách";
+"text_movie" = "Phim ảnh";
+"text_video" = "Video âm nhạc";
+"text_podcast" = "Podcast";
+"text_app" = "Ứng dụng";
+"text_song" = "Bài hát";
+"text_tv_episode" = "Phim nhiều tập";
+"text_genres" = "thể loại";
+"text_price" = "giá";
+"text_loading" = "Đang tải";
+"text_artist_name_label_format" = "%2$@ với %1$@";
+"text_title_searchVC" = "Tìm kiếm";
+"text_send_support_email" = "Gửi Email Hỗ Trợ";
+"text_rate_this_app" = "Bình chọn cho app";
+"text_about" = "Thông tin app";
+"text_title_support_request" = "Yếu cầu hỗ trợ";
+"text_body_mail" = "Soạn email của bạn tại đây";
+"text_nothing_found" = "Không có kết quả";
+"text_unknown" = "Không có thông tin";
+"text_free" = "Miễn phí";

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 struct SearchCellViewModel {
     private var search: SearchResult
@@ -15,7 +16,7 @@ struct SearchCellViewModel {
     }
     
     var notFound: String {
-        return search.isFounded ? "" : "Nothing Found"
+        return search.isFounded ? "" : "text_nothing_found".localized()
     }
     
     var mainTitle: String {
@@ -24,13 +25,18 @@ struct SearchCellViewModel {
     
     var subTitle: String {
         if !search.artist.isEmpty && search.isFounded {
-            return String(format: "%@ (%@)", search.artist, search.type)
+            
+            return "text_artist_name_label_format".localizedFormat(search.artist, search.type)
+            
             
         } else if search.artist.isEmpty && search.isFounded {
-            return "Unknown"
+            
+            return "text_unknown".localized()
             
         } else {
+            
             return ""
+            
         }
         
     }
@@ -67,7 +73,7 @@ struct SearchCellViewModel {
         
         if search.price == 0 {
             
-            return "Free"
+            return "text_free".localized()
             
         } else if let text = formatter.string(from: search.price as NSNumber) {
             
